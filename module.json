@@ -1,0 +1,14 @@
+{
+  "id": "escrita-na-mesa",
+  "title": "Escrita na Mesa",
+  "description": "Escreva na cena com fonte, cor, tamanho, giro e moldura opcional, e todos veem. Jogadores sem permissão de desenhar escrevem através do GM. Funciona em qualquer sistema.",
+  "version": "1.0.0",
+  "compatibility": { "minimum": "12", "verified": "13" },
+  "authors": [{ "name": "Angelo Magno" }],
+  "url": "https://github.com/angelomagnoBR/escrita-na-mesa",
+  "manifest": "https://raw.githubusercontent.com/angelomagnoBR/escrita-na-mesa/main/module.json",
+  "download": "https://raw.githubusercontent.com/angelomagnoBR/escrita-na-mesa/main/dist/escrita-na-mesa.zip",
+  "esmodules": ["scripts/escrita.js"],
+  "styles": ["styles/escrita.css"],
+  "socket": true
+}

@@ -1,0 +1,43 @@
+/* Escrita na Mesa */
+body.escrita-ativa #board { cursor: crosshair !important; }
+.escrita-aviso {
+  position: fixed; top: 12px; left: 50%; transform: translateX(-50%); z-index: 100;
+  background: rgba(20, 17, 14, .92); color: #efe5cf; border: 1px solid #e8a92e; border-radius: 6px;
+  padding: 8px 14px; font-size: 14px; pointer-events: none; box-shadow: 0 4px 14px rgba(0, 0, 0, .5);
+}
+.escrita-aviso i { color: #e8a92e; margin-right: 6px; }
+.escrita-janela { display: flex; flex-direction: column; gap: 10px; }
+.escrita-janela textarea { width: 100%; resize: vertical; font-size: 14px; }
+.escrita-janela label { display: flex; flex-direction: column; gap: 4px; }
+.escrita-janela .escrita-linha { display: flex; align-items: flex-end; gap: 12px; }
+.escrita-janela .escrita-linha label { flex: 0 0 auto; }
+.escrita-janela input[type="color"] { width: 52px; height: 30px; padding: 0 2px; cursor: pointer; }
+.escrita-amostras { display: flex; gap: 6px; padding-bottom: 3px; }
+.escrita-amostra {
+  width: 24px; height: 24px; min-width: 0; padding: 0; border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, .45); cursor: pointer; flex: 0 0 auto;
+}
+.escrita-amostra:hover { transform: scale(1.12); }
+.escrita-tam-valor { font-weight: 700; }
+.escrita-previa {
+  min-height: 90px; max-height: 220px; overflow: auto; border-radius: 6px; padding: 12px;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  background: radial-gradient(ellipse at center, #2f5a3a 0%, #1d3a25 70%, #12241a 100%);
+  box-shadow: inset 0 0 18px rgba(0, 0, 0, .6);
+}
+.escrita-previa span { white-space: pre-wrap; line-height: 1.15; text-shadow: 0 1px 2px rgba(0, 0, 0, .55); }
+
+
+/* Giro e moldura */
+.escrita-janela .escrita-giro { align-items: center; gap: 6px; }
+.escrita-janela .escrita-giro input[type="range"] { flex: 1; }
+.escrita-janela .escrita-giro button { flex: 0 0 auto; width: 34px; min-width: 0; height: 28px; line-height: 26px; padding: 0; margin: 0; }
+.escrita-janela .escrita-giro-valor { font-weight: 700; }
+.escrita-janela .escrita-moldura { align-items: center; flex-wrap: wrap; }
+.escrita-janela .escrita-moldura label.check { flex-direction: row; align-items: center; gap: 6px; }
+.escrita-janela .escrita-moldura-larg { flex: 1 1 140px !important; }
+.escrita-janela .escrita-moldura input:disabled { opacity: .4; }
+.escrita-previa span { display: inline-block; transition: transform .15s; }
+
+.escrita-form { display: flex; flex-direction: column; gap: 8px; }
+.escrita-form label.check { flex-direction: row; align-items: center; gap: 6px; }
